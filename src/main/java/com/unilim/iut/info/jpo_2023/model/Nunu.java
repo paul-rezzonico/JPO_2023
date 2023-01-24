@@ -53,7 +53,7 @@ public class Nunu {
         //Todo
     }
 
-    //Cette méthode est un getteur, elle permet de récupérer la position de Nunu, en respectant
+    //Cette méthode est un getter, elle permet de récupérer la position de Nunu, en respectant
     //le principe d'encapsulation, on ne peut pas modifier la position de Nunu depuis l'extérieur
     //de la classe
     public Position getPosition() {
