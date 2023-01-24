@@ -1,10 +1,11 @@
 package com.unilim.iut.info.jpo_2023;
 
 import com.unilim.iut.info.jpo_2023.model.Direction;
-import com.unilim.iut.info.jpo_2023.model.Position;
 import com.unilim.iut.info.jpo_2023.model.Nunu;
+import com.unilim.iut.info.jpo_2023.model.Position;
 
 public class Main {
+
     public static void main(String[] args) {
 
         //initialisation de la position de Nunu
