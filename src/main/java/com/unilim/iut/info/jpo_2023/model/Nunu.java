@@ -27,7 +27,7 @@ public class Nunu {
         switch (this.direction) {
             case NORTH -> {
                 //TODO
-                //Vos instructions doivent ressembler à ceci:
+                //Vos instructions doivent ressembler à ceci :
                 //this.position = new Position(this.position.x(), this.position.y() + 1);
             }
             case SOUTH -> {
@@ -53,7 +53,7 @@ public class Nunu {
         //Todo
     }
 
-    //Cette méthode est un guetteur, elle permet de récupérer la position de Nunu, en respectant
+    //Cette méthode est un getter, elle permet de récupérer la position de Nunu, en respectant
     //le principe d'encapsulation, on ne peut pas modifier la position de Nunu depuis l'extérieur
     //de la classe
     public Position getPosition() {
@@ -61,7 +61,7 @@ public class Nunu {
         return null;
     }
 
-    //gueetteur pour la direction de Nunu
+    //getter pour la direction de Nunu
     public Direction getDirection() {
         return this.direction;
     }

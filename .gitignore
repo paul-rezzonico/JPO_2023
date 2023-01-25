@@ -5,7 +5,7 @@ target/
 mvnw
 mvnw.cmd
 .gitignore
-.idea
+.idea/
 
 ### IntelliJ IDEA ###
 .idea/modules.xml
