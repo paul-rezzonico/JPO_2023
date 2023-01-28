@@ -5,7 +5,7 @@ package com.unilim.iut.info.jpo_2023.model;
 //que ce dernier puisse se déplacer.
 public class Nunu {
     //position de Nunu
-    //TODO: ajouter l'attribut nécessaire
+    private Position position;
 
     //direction de Nunu
     private Direction direction;
@@ -13,10 +13,8 @@ public class Nunu {
     //constructeur, c'est lorsque l'on appelle new Nunu() que ce constructeur est appelé, il permet
     //d'initialiser les attributs de la classe
     public Nunu(Position position, Direction direction) {
-        //initialisation de la position du rover
-
-        //initialisation de la direction du rover
-
+        this.position = position;
+        this.direction = direction;
     }
 
     //méthode pour faire avancer le rover
@@ -26,39 +24,62 @@ public class Nunu {
 
         switch (this.direction) {
             case NORTH -> {
-                //TODO
-                //Vos instructions doivent ressembler à ceci :
-                //this.position = new Position(this.position.x(), this.position.y() + 1);
+                this.position = new Position(this.position.x(), this.position.y() + 1);
             }
             case SOUTH -> {
-                //TODO
+                this.position = new Position(this.position.x(), this.position.y() - 1);
             }
             case EAST -> {
-                //TODO
+                this.position = new Position(this.position.x() + 1, this.position.y());
             }
             case WEST -> {
-                //TODO
+                this.position = new Position(this.position.x() - 1, this.position.y());
             }
         }
     }
 
     //méthode pour tourner à gauche, on considèrera que l'on tourne sur place
     public void tournerAGauche() {
-        //Todo
+        switch (this.direction) {
+            case NORTH -> {
+                this.direction = Direction.WEST;
+            }
+            case SOUTH -> {
+                this.direction = Direction.EAST;
+            }
+            case EAST -> {
+                this.direction = Direction.NORTH;
+            }
+            case WEST -> {
+                this.direction = Direction.SOUTH;
+            }
+        }
     }
 
 
     //méthode pour tourner à droite on considèrera que l'on tourne sur place
     public void tournerADroite() {
-        //Todo
+        switch (this.direction) {
+            case NORTH -> {
+                this.direction = Direction.EAST;
+            }
+            case SOUTH -> {
+                this.direction = Direction.WEST;
+            }
+            case EAST -> {
+                this.direction = Direction.SOUTH;
+            }
+            case WEST -> {
+                this.direction = Direction.NORTH;
+            }
+        }
     }
 
     //Cette méthode est un getter, elle permet de récupérer la position de Nunu, en respectant
     //le principe d'encapsulation, on ne peut pas modifier la position de Nunu depuis l'extérieur
     //de la classe
     public Position getPosition() {
-        //Todo
-        return null;
+        return this.position;
     }
 
     //getter pour la direction de Nunu

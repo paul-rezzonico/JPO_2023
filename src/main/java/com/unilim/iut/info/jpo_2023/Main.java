@@ -22,6 +22,25 @@ public class Main {
         nunu.afficher();    //cette ligne permet d'afficher la position et la direction de Nunu
         nunu.avancer();     //cette ligne permet de faire avancer Nunu d'une case dans la direction dans laquelle il est tourné
         nunu.afficher();
+        nunu.tournerADroite();
+        for (int i = 0; i < 6; i++) {
+            nunu.avancer();
+            nunu.afficher();
+        }
+        nunu.tournerAGauche();
+        nunu.afficher();
+        nunu.avancer();
+        nunu.afficher();
+        nunu.tournerADroite();
+        nunu.afficher();
+        nunu.avancer();
+        nunu.afficher();
+        nunu.tournerAGauche();
+        nunu.afficher();
+        nunu.avancer();
+
+
+
 
     }
 }
