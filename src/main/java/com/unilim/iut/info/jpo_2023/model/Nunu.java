@@ -19,7 +19,7 @@ public class Nunu {
 
     }
 
-    //méthode pour faire avancer le rover
+    //méthode pour faire avancer Nunu d'une case dans la direction dans laquelle il est tourné
     //Cette méthode est appelée lorsque l'on appelle la méthode avancer() sur un objet de type Nunu
     //elle va permettre de faire avancer Nunu d'une case dans la direction dans laquelle il est tourné
     public void avancer() {
