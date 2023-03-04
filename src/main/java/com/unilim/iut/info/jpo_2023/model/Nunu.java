@@ -13,9 +13,9 @@ public class Nunu {
     //constructeur, c'est lorsque l'on appelle new Nunu() que ce constructeur est appelé, il permet
     //d'initialiser les attributs de la classe
     public Nunu(Position position, Direction direction) {
-        //initialisation de la position du rover
+        //initialisation de la position de Nunu
 
-        //initialisation de la direction du rover
+        //initialisation de la direction de Nunu
 
     }
 
