@@ -36,7 +36,7 @@ This repository contains the Java code from open days of BUT INFO 2022 project. 
 
 1. Clone the repository: 
 ```bash
-git clone git@github.com:paul-rezzonico/
+git clone https://github.com/paul-rezzonico/JPO_2023.git
 ```
 
 2. Install the dependencies:
